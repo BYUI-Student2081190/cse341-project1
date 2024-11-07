@@ -1,2 +1,5 @@
 # We will want to ignore node_modules due to size
 node_modules
+
+# We also want our .env file ignored because that contains sensitive information
+.env

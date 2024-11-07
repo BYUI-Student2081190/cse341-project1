@@ -1,0 +1,12 @@
+// LOCAL HOST
+### Get All Users
+GET http://localhost:3000/users
+### Get Individual Users
+### 1st
+GET http://localhost:3000/users/672d184978e5120d9aede4e6
+### 2nd
+GET http://localhost:3000/users/672d19c378e5120d9aede4e7
+### 3rd
+GET http://localhost:3000/users/672d1a3e78e5120d9aede4e8
+
+// PRODUCTION
