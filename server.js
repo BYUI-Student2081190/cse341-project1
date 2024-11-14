@@ -2,15 +2,18 @@
 const express = require('express');
 const app = express();
 const mongodb = require('./data/database');
-
+const bodyParser = require('body-parser');
 const port = process.env.PORT || 3000;
+
+
+/**  Middleware  **/
+// Utilize body-parser
+app.use(bodyParser.json());
 
 
 /**   Routes   **/
 // Index file
 app.use("/", require("./routes/"));
-// Users file
-app.use("/users", require("./routes/users"));
 
 
 /**   Port   **/

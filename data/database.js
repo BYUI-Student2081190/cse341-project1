@@ -1,4 +1,4 @@
-/**   Required Objects   **/
+/**   Required Varibles   **/
 const dotenv = require('dotenv');
 dotenv.config();
 

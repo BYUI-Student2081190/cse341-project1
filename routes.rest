@@ -8,6 +8,44 @@ GET http://localhost:3000/users/672d184978e5120d9aede4e6
 GET http://localhost:3000/users/672d19c378e5120d9aede4e7
 ### 3rd
 GET http://localhost:3000/users/672d1a3e78e5120d9aede4e8
+### Create User
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "email":"testNewGuy1@fakeemail.com",
+    "firstname":"New",
+    "lastname":"Guy",
+    "favcolor":"Blue",
+    "birthday":"04-04-1980"
+}
+
+### Update User
+PUT http://localhost:3000/users/672d184978e5120d9aede4e6
+Content-Type: application/json
+
+{
+    "email":"starsagent007@fakeemail.com",
+    "firstname":"Jill",
+    "lastname":"Valentine",
+    "favcolor":"Pink",
+    "birthday":"03-22-1996"
+}
+
+### Update User Back to Original
+PUT http://localhost:3000/users/672d184978e5120d9aede4e6
+Content-Type: application/json
+
+{
+    "email":"jillstars@fakeemail.com",
+    "firstname":"Jill",
+    "lastname":"Valentine",
+    "favcolor":"Pink",
+    "birthday":"03-22-1996"
+}
+
+### Delete User - (Make sure to replace the id)
+DELETE http://localhost:3000/users/67354065f944cdd73069a66d
 
 // PRODUCTION
 ### Get All Users
